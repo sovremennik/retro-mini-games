@@ -3,7 +3,11 @@ package viewmodel
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.geometry.Offset
-import logic.*
+import logic.CollisionDetector
+import logic.Direction
+import logic.FoodGenerator
+import logic.SnakeMovement
+import logic.isOppositeDirection
 import model.GRID_COLS
 import model.GRID_ROWS
 import model.MAX_SPEED

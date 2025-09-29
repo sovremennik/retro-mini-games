@@ -15,8 +15,15 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.compose.desktop:desktop-jvm-windows-x64:1.7.3")
+
+    testImplementation(kotlin("test"))
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    testImplementation("io.mockk:mockk:1.13.8")
 }
 
+tasks.test {
+    useJUnitPlatform()
+}
 
 kotlin {
     jvmToolchain(21)
